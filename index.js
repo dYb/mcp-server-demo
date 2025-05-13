@@ -17,6 +17,7 @@ server.resource('echo', new ResourceTemplate('echo://{message}', { list: undefin
   ],
 }))
 
+// some changes
 server.tool('echo', { message: z.string() }, async ({ message }) => ({
   content: [{ type: 'text', text: `Tool echo: ${message}` }],
 }))
